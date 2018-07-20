@@ -1,4 +1,4 @@
-exports.modifyBabelrc = ( {babelrc}, {style} ) => {
+exports.onCreateBabelConfig = ( {babelrc}, {style} ) => {
   return {
     ...babelrc,
     plugins: babelrc.plugins.concat([
